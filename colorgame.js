@@ -63,6 +63,7 @@ resetButton.addEventListener("click", function(){
     //change colors of squares
     colorDisplay.textContent = goalColor;
     messageDisplay.textContent = "";
+    this.textContent = "New Colors"
     for(var i = 0; i < colorSquares.length; i++){
         colorSquares[i].style.backgroundColor = colors[i];
     }
