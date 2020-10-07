@@ -9,7 +9,7 @@ var goalColor = goalColour();
 //selectors
 var colorSquares = document.querySelectorAll(".square");
 var goalDisplay = document.getElementById("colorDisplay");
-var messageDisplay = document.querySelector("#message");
+var messageDisplay = document.querySelector("#space");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#playAgain");
 var easyBtn = document.getElementById("easyBtn");
@@ -66,7 +66,7 @@ resetButton.addEventListener("click", function(){
         colorSquares[i].style.backgroundColor = colors[i];
     }
     h1.style.backgroundColor = "steelblue";
-})
+});
 
 
 //score display
@@ -88,9 +88,9 @@ for(var i=0; i<colorSquares.length; i++){
             h1.style.backgroundColor = clickedColor;
             resetButton.textContent = "Play again!";
         }
-        else {
+        else{
             messageDisplay.textContent = "Try again.";
-            this.style.backgroundColor = "steelblue";
+            this.style.backgroundColor = "#232323";
         }
     });
 }
